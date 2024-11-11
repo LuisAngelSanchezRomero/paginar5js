@@ -1,0 +1,80 @@
+/* Estilo general del body */
+body {
+    background-image: url('../img/proyect/fondoproye.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;   /* Asegura que el body ocupe al menos toda la altura de la ventana */
+    display: flex;        /* Usamos flexbox en el body */
+    flex-direction: column; /* Los elementos del body se alinean en columna */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Estilo para la sección de proyectos */
+#proyectos {
+    display: flex;               /* Usamos Flexbox */
+    flex-direction: column;      /* Alineamos los elementos en columna */
+    align-items: center;         /* Centra el título horizontalmente */
+    justify-content: center;     /* Centra el título verticalmente */
+    text-align: center;          /* Asegura que el texto del título esté centrado */
+    margin: 0;
+    padding: 20px 0;             /* Espaciado superior e inferior */
+}
+
+/* Título de la sección */
+#proyectos h2 {
+    font-size: 2.5rem;           /* Tamaño de la fuente para el título */
+    margin-bottom: 20px;         /* Espacio debajo del título */
+    color: white;                /* Color blanco para el título */
+    font-weight: bold;           /* Hace el título más destacado */
+}
+
+/* Asegurarse de que el contenedor ocupe toda la altura disponible */
+.proyectos-container {
+    display: flex;               /* Usa flexbox */
+    flex-wrap: wrap;             /* Permite que los proyectos se ajusten en diferentes líneas si es necesario */
+    justify-content: center;     /* Centra los proyectos horizontalmente */
+    align-items: flex-start;     /* Alinea los proyectos al principio del contenedor (no al centro) */
+    flex-grow: 1;                /* Permite que este contenedor crezca para ocupar el espacio disponible */
+    margin: 0;                   /* Elimina márgenes predeterminados */
+    padding: 20px;               /* Agrega algo de espacio alrededor */
+    box-sizing: border-box;      /* Para asegurar que el padding no afecte el tamaño total del contenedor */
+}
+
+/* Estilo de cada proyecto dentro del contenedor */
+.proyecto {
+    margin: 20px;                /* Agrega margen entre los proyectos */
+    padding: 15px;               /* Espacio interno del proyecto */
+    background-color: #fff;      /* Fondo blanco para cada proyecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle profundidad */
+    border-radius: 8px;          /* Bordes redondeados */
+    width: 300px;                /* Ancho fijo para cada proyecto */
+    text-align: center;          /* Centra el texto dentro de cada proyecto */
+    color: #000;                 /* Color de texto negro para las letras */
+}
+
+/* Si quieres que las imágenes no se desborden */
+.proyecto img {
+    max-width: 100%;             /* Asegura que las imágenes no se desborden */
+    height: auto;                /* Mantiene la proporción de las imágenes */
+    border-radius: 8px;          /* Bordes redondeados en las imágenes */
+}
+
+/* Estilo del botón */
+.proyecto .btn {
+    display: inline-block;       /* Hace que el botón sea un bloque en línea */
+    padding: 10px 20px;          /* Espaciado interno del botón */
+    margin-top: 15px;            /* Espaciado superior del botón */
+    background-color: #007bff;   /* Fondo azul para el botón */
+    color: white;                /* Texto blanco */
+    text-decoration: none;       /* Elimina el subrayado */
+    border-radius: 4px;          /* Bordes redondeados */
+    transition: background-color 0.3s ease;  /* Transición suave para el color de fondo */
+}
+
+.proyecto .btn:hover {
+    background-color: #0056b3;   /* Cambio de color en hover */
+}

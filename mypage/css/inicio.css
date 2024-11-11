@@ -1,0 +1,135 @@
+/* Estilo general para el body */
+body {
+  background-image: url('../img/inicio/fondodepag.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo para la cabecera */
+header {
+  background-color: rgb(209, 53, 53); /* Fondo rojo para la cabecera */
+  padding: 1px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estilo para el logo */
+nav .nav__logo img {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+/* Estilo para el contenedor de los enlaces (ul) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Estilo para cada enlace dentro del nav */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+nav a:hover {
+  color: yellow;
+  background-color: rgb(0, 0, 0);
+}
+
+/* Opcional: Asegurar que el contenedor de navegación no se rompa en pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 12px 20px;
+  }
+}
+
+#bienvenida h1, #bienvenida p {
+  text-align: center;
+}
+
+/* Estilos para el carrusel */
+#carrusel {
+  margin: 30px 0;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carousel-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Estilo para los botones de navegación (opcional) */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.carousel-btn-prev {
+  left: 10px;
+}
+
+.carousel-btn-next {
+  right: 10px;
+}
+
+/* Estilo del pie de página */
+footer {
+  background-color: #333;      /* Fondo oscuro para el pie de página */
+  color: #fff;                 /* Texto blanco */
+  text-align: center;          /* Centrado del texto */
+  padding: 10px 0;             /* Espaciado arriba y abajo */
+  font-size: 14px;             /* Tamaño de fuente */
+  margin-top: 20px;            /* Espaciado superior */
+  width: 100%;                 /* Asegura que el pie de página ocupe todo el ancho */
+}
